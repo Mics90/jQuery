@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+        
+        
+        <script>
+
+$(document).ready(function(){ //this is function to wait when page is loded
+    $("html").append( //target html and append
+        "<body>\
+            <div id='container'>\
+                <div id='inner'>\
+                    <h1>Basic jQuery</h1>\
+                    <p id='1'>Paragraph 1</p>\
+                    <p id='2'>Paragraph 2</p>\
+                    <p id='3'>Paragraph 3</p>\
+                    <p id='4'>Slowly disappers </p>\
+                    </div>\
+                    </div>\
+                    </body>"
+
+    );
+    $("#2").css("color", "red");//target id 2 and change color to red
+    $("#4").hide(4000);//hide id 4 slowly
+    $( "#1" ).click(function() {  //target id 1 and when click alert
+    alert( "You clicked a paragraph!" );
+});
+    $("#3").click(function(){     //target id 3 and when click hide h1
+        $('h1').hide();//hide h1
+
+        
+    });
+});
+
+
+
+// Event setup using a convenience method
+
+
+
+
+
+        </script>
+    </body>
+</html>
